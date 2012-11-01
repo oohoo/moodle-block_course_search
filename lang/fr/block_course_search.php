@@ -15,7 +15,7 @@
  * *************************************************************************
  * ************************************************************************ */
 
-$string['pagetitle'] = 'Ré de la recherche dans le cours';
+$string['pagetitle'] = 'Résultat de la recherche dans le cours';
 $string['pluginname'] = 'Recherche dans le cours';
 $string['results'] = 'Résultat de votre recherche pour le(s) mot(s) clé(s) :';
 $string['return_course'] = 'Retourner au cours';
