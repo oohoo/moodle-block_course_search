@@ -15,6 +15,7 @@
  * *************************************************************************
  * ************************************************************************ */
 
+$string['course_search:addinstance'] = 'Add a new course search block';
 $string['pagetitle'] = 'Course search results';
 $string['pluginname'] = 'Course search';
 $string['results'] = 'Results for your search on key word(s):';
