@@ -16,6 +16,8 @@
  * ************************************************************************ */
 
 $string['course_search:addinstance'] = 'Ajouter un nouveau bloc de recherche dans le cours';
+$string['new_search'] = 'Nouvelle recherche';
+$string['no_result'] = 'Pas de resultat';
 $string['pagetitle'] = 'Résultat de la recherche dans le cours';
 $string['pluginname'] = 'Recherche dans le cours';
 $string['results'] = 'Résultat de votre recherche pour le(s) mot(s) clé(s) :';

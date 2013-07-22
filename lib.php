@@ -31,7 +31,7 @@ function block_course_search_search_module($courseid, $module, $q)
     global $CFG, $DB, $OUTPUT;
 
     $ret = '';
-    $sqlWere = 'course=? AND (0';
+    $sqlWere = 'course=? AND (false';
     $sqlParams = array($courseid);
     //At least one search field is needed
     $onefield = false;

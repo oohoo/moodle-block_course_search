@@ -72,8 +72,8 @@ class block_course_search extends block_base
         $text .= "<input type='hidden' name='courseid' id='courseid' value='$course->id'/>";
         $text .= "<input type='text' name='q' id='q' value=''/>";
         $text .= "<br><input type='submit' id='searchform_button' value='" . get_string('submit', 'block_course_search') . "'>";
-        $text .= "</form>";
         $text .= "</fieldset>";
+        $text .= "</form>";
         $text .= "</div>";
         $this->content->text = $text;
 
