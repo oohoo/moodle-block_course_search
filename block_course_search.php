@@ -62,7 +62,14 @@ class block_course_search extends block_base
 
         $this->content = new stdClass;
 
-        $context = get_context_instance(CONTEXT_COURSE, $course->id);
+        if(class_exists('context_course'))
+        {
+            $context = context_course::instance($course->id);
+        }
+        else
+        {
+            $context = get_context_instance(CONTEXT_COURSE, $course->id);
+        }
 
         $this->content->footer = '&nbsp;';
         $text = "<div class=\"searchform\">";

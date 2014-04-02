@@ -16,6 +16,7 @@
  * ************************************************************************ */
 
 $string['course_search:addinstance'] = 'Add a new course search block';
+$string['course_search:myaddinstance'] = 'Add a new course search block';
 $string['new_search'] = 'New search';
 $string['no_result'] = 'No result';
 $string['pagetitle'] = 'Course search results';
