@@ -25,7 +25,14 @@ require_login($courseid, true); //Use course 1 because this has nothing to do wi
 
 global $CFG, $PAGE, $OUTPUT, $DB, $USER;
 
-$context = get_context_instance(CONTEXT_COURSE, $courseid);
+if(class_exists('context_course'))
+{
+    $context = context_course::instance($courseid);
+}
+else
+{
+    $context = get_context_instance(CONTEXT_COURSE, $courseid);
+}
 
 $PAGE->set_pagelayout('incourse');
 $PAGE->set_url('/blocks/course_search/results.php', array('id' => $courseid));
