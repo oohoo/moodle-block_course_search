@@ -107,7 +107,7 @@ function block_course_search_search_section($courseid, $q)
 
     foreach ($results as $result)
     {
-        $link = "<li><a href='$CFG->wwwroot/course/view.php?id=$courseid#section-$result->section'><img src='" . $OUTPUT->pix_url('icon', 'label') . "' alt='section - '/>&nbsp;$result->name</a></li>";
+        $link = "<li><a href='$CFG->wwwroot/course/view.php?id=$courseid&sectionid=$result->id'><img src='" . $OUTPUT->pix_url('icon', 'label') . "' alt='section - '/>&nbsp;$result->name</a></li>";
         $ret .= $link;
     }
     return $ret;
@@ -163,7 +163,7 @@ function block_course_search_search_module_label($courseid, $module, $q, $modinf
 
         if ($sectionfounded != null)
         {
-            $ret .= "<li><a href='$CFG->wwwroot/course/view.php?id=$courseid#section-$sectionfounded->section'><img src='" . $OUTPUT->pix_url('icon', 'label') . "' alt='label - '/>&nbsp;$result->name</a></li>";
+            $ret .= "<li><a href='$CFG->wwwroot/course/view.php?id=$courseid&sectionid=$sectionfounded->id'><img src='" . $OUTPUT->pix_url('icon', 'label') . "' alt='label - '/>&nbsp;$result->name</a></li>";
         }
     }
     return $ret;

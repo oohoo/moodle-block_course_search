@@ -25,7 +25,15 @@ require_login($courseid, true); //Use course 1 because this has nothing to do wi
 
 global $CFG, $PAGE, $OUTPUT, $DB, $USER;
 
-$context = get_context_instance(CONTEXT_COURSE, $courseid);
+//Replace get_context_instance by the class for moodle 2.6+
+if(class_exists('context_module'))
+{
+    $context = context_course::instance($courseid);
+}
+else
+{
+    $context = get_context_instance(CONTEXT_COURSE, $courseid);
+}
 
 $PAGE->set_pagelayout('incourse');
 $PAGE->set_url('/blocks/course_search/results.php', array('id' => $courseid));
